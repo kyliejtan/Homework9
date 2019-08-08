@@ -150,15 +150,32 @@ body {
 .weather-v-latitude-img {
   padding-top: 10px;
   padding-left: 20px;
+  padding-bottom: 50px;
   width: 50%;
   height: 50%;
+  float: left;
 }
 /* box-1-text */
-.box-1-text {
-  padding-top: 20px;
+.p-1-text {
+  padding-top: 50px;
   padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
 }
 
+.p-2-text {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+
+.climate-text {
+  padding-top: 45px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
 /* --- Flex-item-2 class styles --- */
 @media (min-width: 1489px) {
   .flex-item-2 {
