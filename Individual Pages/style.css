@@ -1,0 +1,272 @@
+/* --- Page class styles --- */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper > * {
+  padding: 0px;
+}
+
+.page-main {
+  flex-grow: 1;
+}
+
+.page-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header ul {
+  display: flex;
+  order: 1;
+  width: 100%;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 0px) {
+  .page-header ul {
+    width: auto;
+    margin-top: 0;}
+  }
+
+/* Making the page background grey*/
+body {
+  background: lightgrey;
+}
+
+/* --- Navbar class styles --- */
+
+/* Making the navbar white */
+.navbar {
+  background: white;
+}
+/* Setting the attributes of navbar-brand */
+.navbar-brand {
+  color: white;
+  font-family: Times, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+/* Making navbar-brand remaintain position and formatting across all screen
+   sizes */
+@media (min-width: 0px) {
+  .navbar-brand {
+    position: absolute;
+    padding: 5px;
+    left: 100px;
+    width: 150px;
+    background: teal;
+    text-align: center;
+  }
+}
+/* Making the nav-link's color grey */
+.nav-link {
+  color: grey;
+}
+/* Setting the behavior of the navbar links when hovered over or in use */
+.nav-item > a:hover {
+  color: grey;
+  background: lightgrey;
+}
+
+/* --- Flex-container class styles --- */
+
+.flex-container {
+
+  list-style: none;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.wrap li {
+  background: white;
+}
+
+/* --- Flex-item-1 class styles --- */
+@media (min-width: 1490px) {
+  .flex-item-1 {
+    order: 2;
+    flex-grow: 1;
+    align-self: flex-start;
+    background: white;
+    width: 1000px;
+    height: auto;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1489px) {
+  .flex-item-1 {
+    order: 2;
+    flex-grow: 1;
+    align-self: flex-start;
+    background: white;
+    width: 1000px;
+    height: auto;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+/* Setting the attributes for box-1-header */
+
+.box-1-header {
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  color: teal;
+  font-family: Times, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+/* box-1-image */
+.box-1-image {
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+.weather-v-latitude-img {
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 50%;
+  height: 50%;
+}
+/* box-1-text */
+.box-1-text {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+/* --- Flex-item-2 class styles --- */
+@media (min-width: 1489px) {
+  .flex-item-2 {
+    order: 2;
+    flex-grow: 1;
+    align-self: flex-start;
+    background: white;
+    padding: 5px;
+    width: 400px;
+    height: auto;
+    margin: 30px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 1489px) {
+  .flex-item-2 {
+    order: 2;
+    flex-grow: 1;
+    align-self: flex-start;
+    background: white;
+    width: 1000px;
+    height: auto;
+    margin: 30px;
+  }
+}
+/* Setting the attributes for box-2-header */
+.box-2-header {
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  color: teal;
+  font-family: Times, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.item {
+  max-width: 235px;
+}
+
+/* --- Footer class styles --- */
+
+.teal-footer {
+  position: sticky;
+  flex-shrink: 0;
+  height: 10px;
+  background-color: teal;
+}
+.grey-footer {
+
+  flex-shrink: 0;
+  height: 50px;
+  background-color: grey;
+}
+
+/* Comparison page styles */
+.flex-item-comparison {
+  order: 1;
+  flex-grow: 1;
+  align-self: flex-start;
+  background: white;
+  padding: 5px;
+  height: auto;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+.click-any-plot{
+  padding-left: 30px;
+}
+
+.comparison-header {
+  text-align: center;
+  padding-left: 30px;
+  color: teal;
+  font-family: Times, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.row {
+  padding-left: 0px;
+  margin: 0px;
+}
+@media (min-width: 1459px)
+  {.col {}}
+
+.col {
+  padding-bottom: 30px;
+}
+.comparison-item {
+  max-width: 700px;
+  display: block;
+  margin: auto;
+}
+
+/* Data Page Styles */
+.data-header {
+  padding-top: 50px;
+  padding-left: 72px;
+  color: teal;
+  font-family: Times, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.table {
+  width: 90%;
+  margin: auto;
+}
