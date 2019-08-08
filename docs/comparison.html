@@ -11,24 +11,17 @@
 </head>
 <div class="wrapper">
   <header class="page-header">
-    <!--   -->
-      <nav class="navbar navbar-expand">
-        <!--  -->
-        <a class="navbar-brand" href="landingPage.html">Latitude</a>
-      <!-- This creates a class that will collapse when the screen size is reduced
-      and setting an id allows the navbar-toggler to be set to display the menu
-      items within this class in a dropdown -->
-
-        <!-- -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-teal">
+      <a class="navbar-brand" href="landingPage.html">Latitude</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdownMenuLink" aria-controls="#navbarDropdownMenuLink" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="custom toggler navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarDropdownMenuLink">
         <ul class="navbar-nav ml-auto">
-          <!-- This creates an menu item that will display a dropdown of the list
-          items inside of it -->
           <li class="nav-item dropdown" id=navbar_links>
-            <!-- This creates the actual menu item that will display the dropdown -->
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               Plot
             </a>
-            <!--  -->
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="tempVlatitude.html">Max Temperature</a>
               <a class="dropdown-item" href="humidityVlatitude.html">Humidity</a>
@@ -36,16 +29,15 @@
               <a class="dropdown-item" href="windspdVlatitude.html">Windsepeed</a>
             </div>
           </li>
-          <!--  -->
           <li class="nav-item">
             <a class="nav-link" href="comparison.html">Comparison</a>
           </li>
-          <!--  -->
           <li class="nav-item">
             <a class="nav-link" href="data.html">Data</a>
           </li>
         </ul>
-      </nav>
+      </div>
+    </nav>
   </header>
   <span class="notranslate">
   <main class="page-main">

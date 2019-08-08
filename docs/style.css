@@ -44,34 +44,59 @@ body {
 /* Making the navbar white */
 .navbar {
   background: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
-/* Setting the attributes of navbar-brand */
+
+@media (max-width: 992px) {
+  .navbar {
+    background: teal;
+    padding: 0px;
+  }
+}
+.navbar-collapse {
+  background: white;
+}
+
+/* Making navbar-brand remaintain position and formatting across all screen
+   sizes */
 .navbar-brand {
+  position: relative;
+  padding: 5px;
+  left: 50px;
+  width: 150px;
+  background: teal;
+  text-align: center;
   color: white;
   font-family: Times, sans-serif;
   font-size: 30px;
   font-weight: bold;
 }
-/* Making navbar-brand remaintain position and formatting across all screen
-   sizes */
-@media (min-width: 0px) {
-  .navbar-brand {
-    position: absolute;
-    padding: 5px;
-    left: 100px;
-    width: 150px;
-    background: teal;
-    text-align: center;
-  }
-}
+
 /* Making the nav-link's color grey */
-.nav-link {
+.navbar-dark .navbar-nav .nav-link {
   color: grey;
+}
+
+.nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 /* Setting the behavior of the navbar links when hovered over or in use */
 .nav-item > a:hover {
   color: grey;
   background: lightgrey;
+}
+
+.navbar-toggler {
+  border-color: red;
+  position:absolute;
+  right: 10px;
+  top: 8px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 /* --- Flex-container class styles --- */
